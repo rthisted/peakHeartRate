@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predicting Peak Heart Rate</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Predicting Peak Heart Rate">
+  <meta name="author" content="Ron Thisted">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Predicting Peak Heart Rate</h1>
+    <h2>Getting it right for men and women</h2>
+    <p>Ron Thisted<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>What is the problem?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>To achieve an aerobic workout, it is usually recommended to exercise in
+order to achieve a heart rate in the target zone of 65--85% of your predicted
+peak heart rate for your age.</li>
+<li>The formula for maximum heart rate,  220-age, was developed using
+cohorts of men.</li>
+<li>Because this formula may not apply to women, standard advice on exercise
+programs from such places as the
+<a href="http://www.mayoclinic.org/healthy-living/fitness/in-depth/exercise-intensity/art-20046887?pg=2">Mayo Clinic</a>
+and the <a href="http://my.clevelandclinic.org/heart/prevention/exercise/pulse-target-heart-rate.aspx">Cleveland Clinic</a>
+may not be appropriate for women&#39;s exercise programs.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Is there really a difference between men and women</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>With respect to exercise capacity (and many other things!), the answer is <em>yes</em>.</li>
+<li>Dr. Martha Gulati and colleagues studied 5932 women to determine their
+maximum heart rate on a treadmill.</li>
+<li>The fitted regression line for these data was used to produce a formula
+for predicted heart rate in women.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How much difference does it make?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The figure shows the difference between
+the regression line for men (blue)
+and the regression line
+for women (orange).  At every age, the predicted peak heart rate
+for men overstates the figure for women.  At age 50, it is about
+5 percent too big.</p>
+
+<p><img src="assets/fig/plot.png" alt="plot of chunk plot"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>A Shiny app can help!</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Use the <em>Peak Heart Rate Calculator</em>, at <a href="https://rthisted.shinyapps.io/PeakHeartRate/">https://rthisted.shinyapps.io/PeakHeartRate/</a></li>
+<li>You enter your sex and age, and the calculator uses the right formula to calculate
+
+<ul>
+<li>The correct predicted peak heart rate, and your target aerobic heart-rate zone</li>
+<li>Example:</li>
+</ul></li>
+</ul>
+
+<p><img src="assets/img/example.png" alt="example"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='What is the problem?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Is there really a difference between men and women'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How much difference does it make?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='A Shiny app can help!'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
